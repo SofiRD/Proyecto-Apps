@@ -37,7 +37,7 @@
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ite-68-x0P">
-                                        <rect key="frame" x="0.0" y="221.5" width="375" height="307.5"/>
+                                        <rect key="frame" x="0.0" y="221.5" width="375" height="351"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenidx!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I6-bx-Fbs">
                                                 <rect key="frame" x="18" y="8" width="339" height="33.5"/>
@@ -66,7 +66,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Corre Electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A0s-YC-ZWY">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A0s-YC-ZWY">
                                                         <rect key="frame" x="0.0" y="0.0" width="339" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="0FC-Au-e7P"/>
@@ -97,14 +97,21 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sM-ZC-ZES"/>
                                                     <segue destination="dJq-vs-gFt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="fJw-Vd-Ihw"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrq-Ka-upX">
+                                                <rect key="frame" x="18" y="322.5" width="339" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="18" bottom="8" right="18"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8K-lz-gNC">
-                                        <rect key="frame" x="0.0" y="537" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="580.5" width="375" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rsv-lZ-kV9">
@@ -135,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="btRegistro" destination="4BF-cH-Aae" id="FX0-zM-4ow"/>
+                        <outlet property="lbError" destination="vrq-Ka-upX" id="g3y-D7-tBp"/>
                         <outlet property="tfContrasena" destination="POb-32-Kzq" id="eml-KV-WQK"/>
                         <outlet property="tfCorreo" destination="kSy-Ga-Ace" id="Fzz-gj-Lbs"/>
                         <outlet property="tfUsuario" destination="A0s-YC-ZWY" id="9yw-9N-zVg"/>
