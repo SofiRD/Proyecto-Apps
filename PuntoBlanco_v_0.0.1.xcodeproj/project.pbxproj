@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3B0E4E255377EE00BF582A /* Elegy2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F3B0E4D255377EE00BF582A /* Elegy2.mp3 */; };
 		4F544353253CDAF7005F9AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F544352253CDAF7005F9AF6 /* AppDelegate.swift */; };
 		4F544355253CDAF7005F9AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F544354253CDAF7005F9AF6 /* SceneDelegate.swift */; };
 		4F544357253CDAF7005F9AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F544356253CDAF7005F9AF6 /* ViewController.swift */; };
@@ -23,11 +24,11 @@
 		BE73D8E725525538002019D2 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73D8E625525538002019D2 /* ViewController2.swift */; };
 		BE73D8E92552F2B8002019D2 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73D8E82552F2B8002019D2 /* ViewController3.swift */; };
 		BE73D8ED25532813002019D2 /* ViewControllerAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73D8EC25532813002019D2 /* ViewControllerAudio.swift */; };
-		BE73D8EF25532CD4002019D2 /* Elegy2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE73D8EE25532CD4002019D2 /* Elegy2.mp3 */; };
 		BE73D8F225532FC0002019D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE73D8F125532FC0002019D2 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F3B0E4D255377EE00BF582A /* Elegy2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Elegy2.mp3; path = ../../../../Downloads/Elegy2.mp3; sourceTree = "<group>"; };
 		4F54434F253CDAF7005F9AF6 /* PuntoBlanco_v_0.0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuntoBlanco_v_0.0.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F544352253CDAF7005F9AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F544354253CDAF7005F9AF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		BE73D8E625525538002019D2 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		BE73D8E82552F2B8002019D2 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		BE73D8EC25532813002019D2 /* ViewControllerAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAudio.swift; sourceTree = "<group>"; };
-		BE73D8EE25532CD4002019D2 /* Elegy2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Elegy2.mp3; path = "../../../../../Volumes/KINGSTON/TEC/Ago-Dic2020/Apps_móviles/PROYECTOFINAL/Audios/Audios/Elegy2.mp3"; sourceTree = "<group>"; };
 		BE73D8F125532FC0002019D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -90,13 +90,13 @@
 				BE73D8E82552F2B8002019D2 /* ViewController3.swift */,
 				BE73D8E625525538002019D2 /* ViewController2.swift */,
 				4F69D82A253D2CE400C3863F /* ConfiguracionViewController.swift */,
+				4F3B0E4D255377EE00BF582A /* Elegy2.mp3 */,
 				4F69D828253D29A700C3863F /* dashboardViewController.swift */,
 				4F69D822253D1F2800C3863F /* Evento.swift */,
 				4F69D824253D1FDA00C3863F /* Reto.swift */,
 				4F69D826253D205C00C3863F /* Meditacion.swift */,
 				4F69D820253D1D3800C3863F /* Usuario.swift */,
 				4F544367253D0BCA005F9AF6 /* Estadisticas.swift */,
-				BE73D8EE25532CD4002019D2 /* Elegy2.mp3 */,
 				4F54435B253CDAF9005F9AF6 /* Assets.xcassets */,
 				4F54435D253CDAF9005F9AF6 /* LaunchScreen.storyboard */,
 				4F544360253CDAF9005F9AF6 /* Info.plist */,
@@ -169,7 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE73D8EF25532CD4002019D2 /* Elegy2.mp3 in Resources */,
+				4F3B0E4E255377EE00BF582A /* Elegy2.mp3 in Resources */,
 				4F54435F253CDAF9005F9AF6 /* LaunchScreen.storyboard in Resources */,
 				4F54435C253CDAF9005F9AF6 /* Assets.xcassets in Resources */,
 				4F54435A253CDAF7005F9AF6 /* Main.storyboard in Resources */,
