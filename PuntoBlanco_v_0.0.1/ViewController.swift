@@ -8,7 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //esta es una prueba
+    
+    @IBOutlet weak var tfCorreo: UITextField!
+    @IBOutlet weak var tfUsuario: UITextField!
+    @IBOutlet weak var tfContrasena: UITextField!
+
+    @IBOutlet weak var btRegistro: UIButton!
     
     
     override func viewDidLoad() {
@@ -16,6 +21,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func scRegistroSesion(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            //iniciar sesión
+            tfCorreo.isHidden = true
+            btRegistro.setTitle("Iniciar sesión", for: .normal)
+        }else{
+            //registro
+            tfCorreo.isHidden = false
+            btRegistro.setTitle("Registrar", for: .normal)
+        }
+        
+    }
+    
 }
 
