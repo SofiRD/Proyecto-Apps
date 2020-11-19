@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/leandroramirez/Desktop/ProyectoMoviles/Proyecto-Apps-new_brach/PuntoBlanco_v_0.0.1/ProgressBar.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PuntoBlanco_v_0.0.1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
