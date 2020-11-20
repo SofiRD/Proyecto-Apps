@@ -10,7 +10,7 @@ import Firebase
 
 class ViewController5: UIViewController{
     
-    
+    var userReference :DatabaseReference!
     var estado = 0
     var texto :String!
     
@@ -63,14 +63,17 @@ class ViewController5: UIViewController{
         medio.imageView?.alpha = 1
         meh.imageView?.alpha = 1
         nobien.imageView?.alpha = 1
-        feliz.imageView?.alpha = 1    }
+        feliz.imageView?.alpha = 1
+    }
     
     @IBAction func guardar(_ sender: UIButton) {
-       var ref: DatabaseReference!
-        ref = Database.database().reference(fromURL: "https://punto-b84a8.firebaseio.com/")
-        ref.updateChildValues(["Notas": notas.text!])
+       //var ref: DatabaseReference!
+       // ref = Database.database().reference(fromURL: "https://punto-b84a8.firebaseio.com/")
+        userReference.updateChildValues(["Notas": notas.text!])
         
-        ref.updateChildValues(["Estado" : estado])
+        userReference.updateChildValues(["Estado" : estado])
+        
+         navigationController?.popViewController(animated: false)
     }
     
     /*
