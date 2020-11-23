@@ -8,14 +8,6 @@
 import UIKit
 
 class ViewControllerNotificacion: UIViewController , UIPopoverPresentationControllerDelegate{
-
-    
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .none
-    }
-    
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

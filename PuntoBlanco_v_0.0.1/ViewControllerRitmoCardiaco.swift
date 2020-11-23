@@ -1,14 +1,16 @@
 //
-//  Estadisticas.swift
+//  ViewControllerRitmoCardiaco.swift
 //  PuntoBlanco_v_0.0.1
 //
-//  Created by user179426 on 10/18/20.
+//  Created by user179426 on 11/22/20.
 //
+
 import UIKit
 import Charts
 
-class Estadisticas: UIViewController, ChartViewDelegate {
+class ViewControllerRitmoCardiacos: UIViewController, ChartViewDelegate {
 
+    @IBOutlet weak var vista: UIView!
     var barChart = BarChartView()
     
     override func viewDidLoad() {
@@ -19,10 +21,12 @@ class Estadisticas: UIViewController, ChartViewDelegate {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        barChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        barChart.frame = CGRect(x: 0, y: 0, width: self.vista.frame.size.width, height: self.vista.frame.size.height)
         
-        barChart.center = view.center
-        view.addSubview(barChart)
+      
+        vista.addSubview(barChart)
+        
+        barChart.fitScreen()
         
         var entries = [BarChartDataEntry]()
         

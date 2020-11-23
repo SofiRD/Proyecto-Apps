@@ -9,13 +9,10 @@ import UIKit
 import FirebaseFirestore
 import Firebase
 
-
-
-
 class dashboardViewController: UIViewController, protocoloModificarPerfil, UIPopoverPresentationControllerDelegate{
     
     var userReference : DatabaseReference!
-    var user : Usuario = Usuario(idUsuario: 1, nombre: "Sebastian Diaz", correo: "sebastian@gmail.com", contrasena: "sebastian1234", imagenPerfil: UIImage(named: "foto"))
+    var user : Usuario = Usuario(idUsuario: 1, nombre: "Andrea Ramirez", correo: "andrea@gmail.com", contrasena: "andrea1234", imagenPerfil: UIImage(named: "foto"))
     
     @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var lbNombreUsuario: UILabel!
@@ -38,6 +35,10 @@ class dashboardViewController: UIViewController, protocoloModificarPerfil, UIPop
     }
     
     
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -49,16 +50,15 @@ class dashboardViewController: UIViewController, protocoloModificarPerfil, UIPop
             vistaConf.unUsuario = user
         }
         else if segue.identifier == "notificacion"{
-            let vistaNotificacion = segue.destination as! ViewController2
+            let vistaNotificacion = segue.destination as! ViewControllerNotificacion
             vistaNotificacion.popoverPresentationController!.delegate = self
             
-        } else {
+        } else if segue.identifier == "meditar"{
             let vis = segue.destination as! UINavigationController
             let vista = vis.topViewController as! ViewController2
             print(userReference)
             vista.userReference = userReference
         }
-      
         
         
     }
